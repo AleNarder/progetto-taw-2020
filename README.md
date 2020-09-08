@@ -4,6 +4,12 @@ Istruzioni su come eseguire l'applicazione in ambiente locale e in produzione
 
 ## Ambiente locale
 
+## Download dei repositories
+```
+git submodule init
+git submodule update
+```
+
 ### Backend
 #### 1. Preparazione
 ```

@@ -1,6 +1,6 @@
 [submodule "taw2020-frontend"]
-	path = taw2020-frontend
+	path = frontend
 	url = https://github.com/AleNarder/taw2020-frontend.git
 [submodule "taw2020-backend"]
-	path = taw2020-backend
+	path = backend
 	url = https://github.com/AleNarder/taw2020-backend.git
