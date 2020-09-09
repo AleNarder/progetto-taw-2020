@@ -1,61 +1,61 @@
 # TAW 2020
 
 Istruzioni su come eseguire l'applicazione in ambiente locale e in produzione
+I percorsi che con prefisso . si intendo dalla radice del progetto
 
-## Ambiente locale
-
-## Download dei repositories
+## Setup
+#### Download dei repositories
 ```
 git submodule init
 git submodule update
 ```
 
-### Backend
-#### 1. Preparazione
+#### Backend
+
 ```
 cd backend
+
 npm install
-npm run build
-```
-#### 2. Testing
-```
-1. npm run dev
 ```
 
-### Frontend
-#### 1.  Preparazione:
+#### Frontend
+
 ``` 	
-cd frontend
-# Installa le dipendenze
+cd ./frontend
+
 npm install
-# Compila i sorgenti per l'esecuzione su browser
-npm run build:web 
-# Compila i sorgenti per l'esecuzione su android in ./android
+
 npm run build:android
-# genera un file .deb installabile in ./dist/installers
+
 npm run build:electron:linux
-# genera la documentazione dei sorgenti
-npm run build:docs
 ```
-####  2.  Testing (con backend in locale)
-##### 1. Android:
+## Testing 
+#### Android
 ```
-aprire da android studio ./android ed eseguire
+aprire la cartella ./frontend/android in android studio ed eseguire l'applicazione
 ```
-##### 2. Web: 
+#### Web 
+##### Con il backend in locale
 ```
+cd ./backend
+
+npm run dev
+
+cd ./frontend
+
+npm run serve
+```
+##### Con il backend in produzione 
+```
+cd ./frontend
 npm run start
 ```
-##### 3. Electron: 
-```
-installare il file .deb presente in  ./dist/installers
-```
-##### 4.  Documentazione: 
-```
-npm run start:docs
+#### Electron 
+
+installare il file .deb presente in  ./frontend/dist/installers
 ```
 
-## Ambiente di produzione e risorse
+## Ambiente di produzione
 
 Applicazione in esecuzione
 
